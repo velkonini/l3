@@ -37,8 +37,12 @@ public class HomeWorkThree {
                     System.out.println("Загаданное число больше");
                 }
             }
-            System.out.println("Повторить игру еще раз? 1 – да / 0 – нет");
+            while (y > 3) {
+                System.out.println("Количество попыток исчерпано");
+                break;
+            }
 
+            System.out.println("Повторить игру еще раз? 1 – да / 0 – нет");
 
         } while (scanner.nextInt() == 1);
     }
